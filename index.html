@@ -3,56 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-    
     <header>
-        <h2>Logo</h2>
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
         <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <ul>
-                <li>Inicio</li>
-                <li>Habilidades</li>
-                <li>Portifólio</li>
-                <li>Contato</li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#portfolio">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about">Portfólio</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="Habilidades">
-            <div>
-                <img src="/img/wordpress.png" alt="wordpress">
-                <img src="/img/figma.png" alt="Figma">
-                <img src="/img/hmtl-5.png" alt="HTML">
-                <img src="/img/css-3.png" alt="CSS">
-                <img src="/img/script-java.png" alt="JavaScript">
+    
+    <section class="sec_Primary">
+        <div class="container">
+            <p>Bem-vindo ao meu portfólio.</p>
+            <h1 class="highlight">
+                <span>D</span><span>o</span><span>u</span><span>g</span><span>l</span><span>a</span><span>s</span><span></span>
+            </h1>
+            <div class="job-title">Desenvolvedor Front-end | Web Design</div>
+            <br>
+            <p>Aqui você encontrará os projetos mais recentes e emocionantes que desenvolvi, utilizando as tecnologias mais modernas do desenvolvimento web.</p>
+            <br>
+            <p>Aproveite a visita!</p>
+            <br>
+
+            <div class="btn-container">
+                <a href="caminho_para_seu_curriculo" class="btn" target="_blank">Currículo</a>
+                <a href="caminho_para_seu_linkedin" class="btn" target="_blank">LinkedIn</a>
             </div>
-        </section>
+        </div>
 
-        <section class="Portifolio">
-            Vazio
-        </section>
+    </section>
 
-        <section class="Contato">
-            formulario
-        </section>
-    </main>
+    <div class="capa">
+        <canvas id="canvas"></canvas>
+        <div class="imagem-fundo"></div>
+        <div class="texto-principal">
+            Quem sou eu ?
+        </div>
+        <div class="subtexto">
+            Descubra mais sobre mim!
+        </div>
+        <img src="/img/alien-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
+    </div>
+    
+    
 
-    <footer>
-        <section class="social">
-            <div>
-                <img src="/img/linkedin.png" alt="">
-                <img src="/img/github.png" alt="">
-                <img src="/img/instagram (2).png" alt="">
-                <img src="/img/facebook (2).png" alt="">
-            </div>
-        </section>
+    <section class="black">
+        <h1>ola mundo</h1>
+    </section>
 
-        <section class="fim">
-            <h2>Site Criado por <a href="#"><span>Douglas da silva nascimento</span></a></h2>
-        </section>
-    </footer>
+
+
+
+
+
+
+
+
+    <div class="capa">
+        <canvas id="canvas"></canvas>
+        <div class="imagem-fundo"></div>
+        <div class="texto-principal">
+            Meu Portifólio
+        </div>
+        <div class="subtexto">
+            Espero que goste!
+        </div>
+        <img src="/img/foguete02-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleMenu() {
+        var navUl = document.querySelector('nav ul');
+        navUl.classList.toggle('active');
+    }
+</script>
+
+<script>
+    function animateName() {
+        const spans = document.querySelectorAll('.highlight span');
+        let delay = 0;
+
+        spans.forEach((span, index) => {
+            delay += 0.5;
+            setTimeout(() => {
+                span.style.opacity = 1;
+                span.style.transform = 'translateY(0)';
+            }, delay * 1000);
+        });
+
+        // Adicionando um tempo de espera extra reduzido após a última letra ser animada
+        setTimeout(() => {
+            spans.forEach(span => {
+                span.style.opacity = 0;
+                span.style.transform = 'translateY(100%)';
+            });
+            setTimeout(animateName, delay * 100 + 100);
+        }, delay * 1000);
+    }
+
+    animateName(); // Inicia a animação pela primeira vez
+</script>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  
+    const stars = [];
+    const numStars = 1000;
+  
+    function Star(x, y, radius, color, speed) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+      this.color = color;
+      this.speed = speed;
+  
+      this.draw = function() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+  
+      this.update = function() {
+        this.x -= this.speed;
+  
+        if (this.x < -this.radius) {
+          this.x = canvas.width + this.radius;
+          this.y = Math.random() * canvas.height;
+        }
+  
+        this.draw();
+      }
+    }
+  
+    function createStars() {
+      for (let i = 0; i < numStars; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = Math.random() * 2;
+        const color = 'white';
+        const speed = Math.random() * 2 + 0.5;
+        stars.push(new Star(x, y, radius, color, speed));
+      }
+    }
+  
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+      stars.forEach(star => {
+        star.update();
+      });
+    }
+  
+    createStars();
+    animate();
+  </script>
+
+<script>
+    
+var imagemMovivel = document.getElementById("imagemMovivel");
+
+var posicao = 0;
+
+function animarImagem() {
+   
+    posicao -= 1;
+    imagemMovivel.style.right = posicao + 'px';
+
+    if (posicao <= -50) { 
+        posicao = window.innerWidth; 
+    }
+
+    requestAnimationFrame(animarImagem);
+}
+
+    animarImagem();
+</script>
+
+<script>
+
+// Captura a referência da imagem movível
+var imagemMovivel = document.getElementById("imagemMovivel");
+
+// Define a escala inicial
+var escala = 0.5;
+// Define o destino inicial da escala
+var destinoEscala = 2.5;
+// Define a velocidade da animação
+var velocidade = 0.005;
+// Define se a escala está aumentando ou diminuindo
+var aumentando = true;
+
+// Define a função para animar a escala
+function animarEscala() {
+    // Atualiza a escala de acordo com a direção
+    if (aumentando) {
+        escala += velocidade;
+        if (escala >= destinoEscala) {
+            aumentando = false;
+        }
+    } else {
+        escala -= velocidade;
+        if (escala <= 0.5) {
+            aumentando = true;
+        }
+    }
+    
+    // Aplica a escala apenas na imagem
+    imagemMovivel.style.transform = 'scale(' + escala + ')';
+
+    // Solicita que a função seja chamada novamente na próxima animação do navegador
+    requestAnimationFrame(animarEscala);
+}
+
+// Inicia a animação da escala
+animarEscala();
+
+</script>
 
 </body>
 </html>
