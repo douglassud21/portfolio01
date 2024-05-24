@@ -22,7 +22,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -52,10 +52,9 @@
 
     </section>
 
-
-
     
-        <main>
+    <main>
+
             <section class="box_main"  id="sobre-mim">
                 <h2>Sobre Mim</h2>
                 <p>Olá! Meu nome é [Seu Nome], e sou um apaixonado desenvolvedor front-end com uma forte paixão pela criação de experiências digitais envolventes e acessíveis. Com uma combinação de habilidades técnicas sólidas e uma mente criativa, estou constantemente buscando maneiras de melhorar e inovar no campo do desenvolvimento web.</p>
@@ -83,9 +82,62 @@
                 <h2>Meu Foco</h2>
                 <p>Como desenvolvedor front-end, meu principal objetivo é criar experiências que não apenas impressionem visualmente, mas também sejam acessíveis e intuitivas para todos os usuários. Estou constantemente aprendendo e acompanhando as últimas tendências e melhores práticas da indústria para garantir que minhas habilidades estejam sempre atualizadas.</p>
             </section>
-        </main>
+    
+    </main>
 
     
+
+    <section class="port">
+        ola mundo!
+    </section>
+
+
+
+
+    <aside id="contatos-container" class="contatos_01">
+            <div id="contato">
+                <h1>Meus Contatos</h1>
+                <ul>
+                    <li>
+                        <img src="/img/facebook (3).png" alt="Facebook">
+                        <strong>Facebook:</strong> <a href="#">Insira o link para o seu perfil do Facebook aqui</a>
+                    </li>
+                    <li>
+                        <img src="/img/instagram (3).png" alt="Instagram">
+                        <strong>Instagram:</strong> <a href="#">Insira o link para o seu perfil do Instagram aqui</a>
+                    </li>
+                    <li>
+                        <img src="/img/linkedin (1).png" alt="LinkedIn">
+                        <strong>LinkedIn:</strong> <a href="#">Insira o link para o seu perfil do LinkedIn aqui</a>
+                    </li>
+                    <li>
+                        <img src="/img/github (1).png" alt="GitHub">
+                        <strong>GitHub:</strong> <a href="#">Insira o link para o seu perfil do GitHub aqui</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="stars"></div>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,8 +162,6 @@
         </div>
     <img src="/img/alien-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
 </div>
-
-
 
 
 <script>
@@ -270,7 +320,29 @@ animarEscala();
 
 </script>
 
- 
+
+
+
+
+
+<script>
+    function createStars() {
+        const stars = document.querySelector('.stars');
+        const numStars = 200; // Change the number of stars here
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.animationDuration = (Math.random() * 2 + 1) + 's'; // Vary animation duration
+            stars.appendChild(star);
+        }
+    }
+
+    createStars();
+</script>
+
 
 </body>
 </html>
