@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+}
+
+  header {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  section {
+    border: 3px solid #ddd; /* Adiciona borda simples */
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative; /* Adiciona posição relativa para efeitos de luz */
+  }
+
+  h1, h2, h3 {
+    margin-bottom: 10px;
+    color: transparent;
+    background: linear-gradient(45deg, #66ff00, #01cbfd, #012ffd);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+  .info h2, .experience h3, .education h3, .skills h3 {
+    margin-top: 0;
+  }
+  
+.p-1 {
+    color: transparent;
+    background: linear-gradient(45deg, #66ff00, #01cbfd, #012ffd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+  .info p, .experience p, .education p, .skills p {
+    margin: 5px 0;
+    color: #fff;
+  }
+
+span {
+    font-weight: 700;
+    color: #fff;
+}
+
+span:hover {
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: transparent;
+    background: linear-gradient(45deg, #66ff00, #01cbfd, #116ffc);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ed-1 {
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient(45deg, #f71f1f, #f83614, #f5533e);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ed-2 {
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient(45deg, #1dbfff, #2691f5, #84ecfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ed-3 {
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient(45deg, #fbff00, #f1fd4b, #a9c701);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+ul {
+    padding: 15px;
+  }
+  
+  li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  li:hover {
+    color: transparent;
+    background: linear-gradient(45deg, #10fcd4, #01cbfd, #012ffd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1em; /* Reduz ainda mais o tamanho da fonte dos títulos */
+    }
+
+    .p-1 {
+        font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte do parágrafo */
+    }
+
+    ul {
+        padding: 5px; /* Reduz ainda mais o padding da lista */
+    }
+
+    li {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte dos itens da lista */
+    }
+}
+  
