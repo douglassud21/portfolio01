@@ -1,5 +1,6 @@
 
 body {
+  
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -111,21 +112,83 @@ ul {
     cursor: pointer;
   }
 
-  @media only screen and (max-width: 480px) {
-    h1, h2, h3 {
-        font-size: 1em; /* Reduz ainda mais o tamanho da fonte dos títulos */
+  @media screen and (max-width: 600px) {
+    body {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
     }
 
-    .p-1 {
-        font-size: 0.8em; /* Reduz ainda mais o tamanho da fonte do parágrafo */
+    header {
+        padding: 10px; /* Reduz o preenchimento */
+    }
+
+    .container {
+        width: 95%; /* Aumenta a largura para usar mais espaço na tela */
+        padding: 10px; /* Reduz o preenchimento */
+    }
+
+    section {
+        padding: 10px; /* Reduz o preenchimento */
+        margin-bottom: 10px; /* Reduz a margem */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+
+    .info p, .experience p, .education p, .skills p {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+
+    span {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
     }
 
     ul {
-        padding: 5px; /* Reduz ainda mais o padding da lista */
+        padding: 10px; /* Reduz o preenchimento */
+    }
+  
+    li {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
     }
 
+    header {
+        padding: 10px; /* Reduz o preenchimento */
+    }
+
+    .container {
+        width: 95%; /* Aumenta a largura para usar mais espaço na tela */
+        padding: 10px; /* Reduz o preenchimento */
+    }
+
+    section {
+        padding: 10px; /* Reduz o preenchimento */
+        margin-bottom: 10px; /* Reduz a margem */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+
+    .info p, .experience p, .education p, .skills p {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+
+    span {
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+
+    ul {
+        padding: 10px; /* Reduz o preenchimento */
+    }
+  
     li {
-        font-size: 14px; /* Reduz ainda mais o tamanho da fonte dos itens da lista */
+        font-size: 0.8em; /* Reduz o tamanho da fonte */
     }
 }
   

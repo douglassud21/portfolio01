@@ -6,211 +6,251 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>GalaxyPortfólio</title>
 </head>
+
 <body>
-    
+
+<!--Menu-->
 <header>
-        <div class="logo">
-            <a href="#">Logo</a>
+    <div class="logo">
+        <a href="#"><span>Galaxy</span>Portfólio.</a>
+    </div>
+
+<!--Menu Hamburguer-->
+
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre-mim">Sobre Mim</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+
+<!--Menu Normal-->
+
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 </header>
-   
+
+<!--Tela de Apresentação-->
 <section class="sec_Primary" id="inicio">
-        <div class="container">
-            <p>Ola! Me chamo</p>
-            <h1 class="highlight">
+
+    <div class="container">
+        <p>Ola! Me chamo</p>
+        
+<!--Efeito de Surgimento-->
+
+        <h1 class="highlight">
                 <span>D</span><span>o</span><span>u</span><span>g</span><span>l</span><span>a</span><span>s</span><span></span>
-            </h1>
-            <br>
-            <p>Bem-vindo ao meu <span>portfólio.</span></p>
-            <div class="job-title">Desenvolvedor <span>Front-end</span> | <span>Web Design</span></div>
-            <br>
-            <p>Aqui você encontrará os projetos mais recentes e emocionantes que desenvolvi, utilizando as tecnologias mais modernas do desenvolvimento web.</p>
-            <br>
-            <p>Aproveite a visita!</p>
-            <br>
+        </h1>
 
-            <div class="btn-container">
-                <a href="cv.html" class="btn" target="_blank">Currículo</a>
-                <a href="https://www.linkedin.com/in/douglas-da-silva-nascimento-3146122ab/" class="btn" target="_blank">LinkedIn</a>
-            </div>
+<br>
+        <p>Bem-vindo ao meu <span>portfólio.</span></p>
+        <div class="job-title">Desenvolvedor <span>Front-end</span> | <span>Web Design</span></div>
+<br>
+        <p>Aqui você encontrará os projetos mais recentes e emocionantes que desenvolvi, utilizando as tecnologias mais modernas do desenvolvimento web.</p>
+<br>
+        <p>Aproveite a visita!</p>
+<br>
 
+<!--Botões com efeito de carregamento-->
+
+        <div class="btn-container">
+            <a href="cv.html" class="btn" target="_blank">Currículo</a>
+            <a href="https://www.linkedin.com/in/douglas-da-silva-nascimento-3146122ab/" class="btn" target="_blank">LinkedIn</a>
         </div>
+    </div>
 
 </section>
    
+<!--Efeito de Transição de seção-->
 <aside>
+
     <div class="capa">
+        
+        
+        <!--Apçicação do efeito-->
         <canvas id="canvas"></canvas>
+
+        
         <div class="imagem-fundo"></div>
+
             <div class="texto-principal">
                 Obrigado pela visita!
             </div>
+
             <div class="subtexto">
                 Descubra mais sobre mim <a href="https://www.linkedin.com/in/douglas-da-silva-nascimento-3146122ab/" target="_blank">aqui!</a>
             </div>
+
         <img src="/img/fgt-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
     </div>
+
 </aside>
 
+<!--Seção, Sobre-Mim-->
 <main>
 
-            <section class="box_main"  id="sobre-mim">
-                <h2>Sobre Mim</h2>
-                <p>Olá! Meu nome é [Seu Nome], e sou um apaixonado desenvolvedor front-end com uma forte paixão pela criação de experiências digitais envolventes e acessíveis. Com uma combinação de habilidades técnicas sólidas e uma mente criativa, estou constantemente buscando maneiras de melhorar e inovar no campo do desenvolvimento web.</p>
-                <h2>Minha Jornada</h2>
-                <p>Minha jornada no mundo da tecnologia começou quando eu era apenas um curioso adolescente, fascinado pela maneira como os websites funcionavam e como eles podiam impactar as pessoas em todo o mundo. Desde então, mergulhei de cabeça no estudo e na prática do desenvolvimento web, explorando linguagens como HTML, CSS e JavaScript, enquanto buscava constantemente aprimorar minhas habilidades.</p>
-            </section>
+    <!--Sobre Mim-->
+    <section class="box_main"  id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Douglas, e sou um apaixonado desenvolvedor front-end com uma forte paixão pela criação de experiências digitais envolventes e acessíveis. Com uma combinação de habilidades técnicas sólidas e uma mente criativa, estou constantemente buscando maneiras de melhorar e inovar no campo do desenvolvimento web.</p>
+        <h2>Minha Jornada</h2>
+        <p>Minha jornada no mundo da tecnologia começou quando eu era apenas um curioso adolescente, fascinado pela maneira como os websites funcionavam e como eles podiam impactar as pessoas em todo o mundo. Desde então, mergulhei de cabeça no estudo e na prática do desenvolvimento web, explorando linguagens como HTML, CSS e JavaScript, enquanto buscava constantemente aprimorar minhas habilidades.</p>
+    </section>
+    
+    <!--Minhas Habilidades-->
+    <section class="box_main"  id="minhas-habilidades">
         
-            <section class="box_main"  id="minhas-habilidades">
-        
-                <h2>Minhas Habilidades</h2>
-                <ul>
-                    <li>HTML5 & CSS3: Domino a estruturação e estilização de páginas web, garantindo layouts responsivos e visualmente atraentes.</li>
-                    <li>JavaScript & Frameworks: Possuo sólidos conhecimentos em JavaScript puro, bem como experiência em frameworks como React e Vue.js para o desenvolvimento de interfaces dinâmicas e interativas.</li>
-                    <li>Web Design: Tenho habilidades sólidas em web design, incluindo o uso de princípios de design visual, tipografia e paleta de cores para criar interfaces atraentes e funcionais.</li>
-                </ul>
-                <div class="images-container">
-                    <img src="/img/html-5 (1).png" alt="">
-                    <img src="/img/css-3.png" alt="">
-                    <img src="/img/script-java.png" alt="">
-                    <img src="/img/wordpress.png" alt="">
-                    <img src="/img/figma.png" alt="">
-                </div>
-            </section>
-            <section class="box_main"  id="meu-foco">
-                <h2>Meu Foco</h2>
-                <p>Como desenvolvedor front-end, meu principal objetivo é criar experiências que não apenas impressionem visualmente, mas também sejam acessíveis e intuitivas para todos os usuários. Estou constantemente aprendendo e acompanhando as últimas tendências e melhores práticas da indústria para garantir que minhas habilidades estejam sempre atualizadas.</p>
-            </section>
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li>HTML5 & CSS3: Domino a estruturação e estilização de páginas web, garantindo layouts responsivos e visualmente atraentes.</li>
+            <li>JavaScript & Frameworks: Possuo sólidos conhecimentos em JavaScript puro, bem como experiência em frameworks como React e Vue.js para o desenvolvimento de interfaces dinâmicas e interativas.</li>
+            <li>Web Design: Tenho habilidades sólidas em web design, incluindo o uso de princípios de design visual, tipografia e paleta de cores para criar interfaces atraentes e funcionais.</li>
+        </ul>
+        <div class="images-container">
+            <img src="/img/html-5 (1).png" alt="">
+            <img src="/img/css-3.png" alt="">
+            <img src="/img/script-java.png" alt="">
+            <img src="/img/wordpress.png" alt="">
+            <img src="/img/figma.png" alt="">
+        </div>
+    </section>
+
+    <!--Meu Foco-->
+    <section class="box_main"  id="meu-foco">
+        <h2>Meu Foco</h2>
+        <p>Como desenvolvedor front-end, meu principal objetivo é criar experiências que não apenas impressionem visualmente, mas também sejam acessíveis e intuitivas para todos os usuários. Estou constantemente aprendendo e acompanhando as últimas tendências e melhores práticas da indústria para garantir que minhas habilidades estejam sempre atualizadas.</p>
+    </section>
     
 </main>
 
 <hr>
-<h1 class="pt">Meu Portifólio</h1>
 
+<!--portfolio-->
+<h1 class="pt">Meu Portifólio</h1>
 <div id="portfolio">
     
-    <div id="filters">
-        <button onclick="filter('web')">Web</button>
-        <button onclick="filter('games')">Apps | Games</button>
-        <button onclick="filter('design')">Design</button>
+<!--portfolio-->
+<div id="filters">
+    <button onclick="filter('web')">Web</button>
+    <button onclick="filter('games')">Apps | Games</button>
+    <button onclick="filter('design')">Design</button>
+</div>
+
+<!--Web-->
+<div id="carousels">
+<div id="web" class="carousel active">
+    <div class="project">
+        <h3>Projeto Web 1</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Web 1">
+        <button onclick="window.open('https://www.seuprojeto1.com', '_blank')">Visitar Site</button>
     </div>
-    <div id="carousels">
-        <div id="web" class="carousel active">
-            <div class="project">
-                <h3>Projeto Web 1</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Web 1">
-                <button onclick="window.open('https://www.seuprojeto1.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto Web 2</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Web 2">
-                <button onclick="window.open('https://www.seuprojeto2.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto Web 3</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Web 3">
-                <button onclick="window.open('https://www.seuprojeto3.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto Web 4</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Web 4">
-                <button onclick="window.open('https://www.seuprojeto4.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto Web 5</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Web 5">
-                <button onclick="window.open('https://www.seuprojeto5.com', '_blank')">Visitar Site</button>
-            </div>
-        </div>
+    <div class="project">
+        <h3>Projeto Web 2</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Web 2">
+        <button onclick="window.open('https://www.seuprojeto2.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto Web 3</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Web 3">
+        <button onclick="window.open('https://www.seuprojeto3.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto Web 4</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Web 4">
+        <button onclick="window.open('https://www.seuprojeto4.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto Web 5</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Web 5">
+        <button onclick="window.open('https://www.seuprojeto5.com', '_blank')">Visitar Site</button>
+    </div>
+</div>
 
-
-
+<!--Apps | Games-->
 <div id="games" class="carousel">
-            <div class="project">
-                <h3>Previsão do Tempo</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 1">
-                <button onclick="window.open('//douglassud21.github.io/Previsao-do-tempo/', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Relógio Digital</h3>
-                <img src="/img/relogio.png" alt="Imagem do Projeto Mobile 2">
-                <button onclick="window.open('//douglassud21.github.io/Relogio-Digital/')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Tela de Login</h3>
-                <img src="/img/tela de login.png" alt="Imagem do Projeto Mobile 3">
-                <button onclick="window.open('//douglassud21.github.io/tela-de-login/')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>App | Game 4</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 4">
-                <button onclick="window.open('https://www.seuprojeto9.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>App | Game 5</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 5">
-                <button onclick="window.open('https://www.seuprojeto10.com', '_blank')">Visitar Site</button>
-            </div>
-  </div>
+    <div class="project">
+        <h3>Previsão do Tempo</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 1">
+        <button onclick="window.open('//douglassud21.github.io/Previsao-do-tempo/', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Relógio Digital</h3>
+        <img src="/img/relogio.png" alt="Imagem do Projeto Mobile 2">
+        <button onclick="window.open('//douglassud21.github.io/Relogio-Digital/')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Tela de Login</h3>
+        <img src="/img/tela de login.png" alt="Imagem do Projeto Mobile 3">
+        <button onclick="window.open('//douglassud21.github.io/tela-de-login/')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>App | Game 4</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 4">
+        <button onclick="window.open('https://www.seuprojeto9.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>App | Game 5</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 5">
+        <button onclick="window.open('https://www.seuprojeto10.com', '_blank')">Visitar Site</button>
+    </div>
+</div>
 
+<!--Design-->
 <div id="design" class="carousel">
-            <div class="project">
-                <h3>Projeto de Design 1</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 1">
-                <button onclick="window.open('https://www.seuprojeto11.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto de Design 2</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 2">
-                <button onclick="window.open('https://www.seuprojeto12.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto de Design 3</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 3">
-                <button onclick="window.open('https://www.seuprojeto13.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto de Design 4</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 4">
-                <button onclick="window.open('https://www.seuprojeto14.com', '_blank')">Visitar Site</button>
-            </div>
-            <div class="project">
-                <h3>Projeto de Design 5</h3>
-                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 5">
-                <button onclick="window.open('https://www.seuprojeto15.com', '_blank')">Visitar Site</button>
-            </div>
+    <div class="project">
+        <h3>Projeto de Design 1</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto de Design 1">
+        <button onclick="window.open('https://www.seuprojeto11.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto de Design 2</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto de Design 2">
+        <button onclick="window.open('https://www.seuprojeto12.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto de Design 3</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto de Design 3">
+        <button onclick="window.open('https://www.seuprojeto13.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto de Design 4</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto de Design 4">
+        <button onclick="window.open('https://www.seuprojeto14.com', '_blank')">Visitar Site</button>
+    </div>
+    <div class="project">
+        <h3>Projeto de Design 5</h3>
+        <img src="/img/previsão.png" alt="Imagem do Projeto de Design 5">
+        <button onclick="window.open('https://www.seuprojeto15.com', '_blank')">Visitar Site</button>
+    </div>
 </div>
 </div>
 </div>
 
 <hr>
 
-<footer>
+
+<!--Página de contatos-->
+<footer id="contato">
     <div class="container">
         <h2 class="contact-title">Contatos</h2>
         <div class="row">
+            <!--Redes sociais-->
             <div class="contact-logos">
-                <a href="#"><img src="/img/facebook (3).png" alt="Logo do Facebook"></a>
-                <a href="#"><img src="/img/instagram (3).png" alt="Logo do Instagram"></a>
-                <a href="#"><img src="/img/linkedin (1).png" alt="Logo do LinkedIn"></a>
-                <a href="#"><img src="/img/github (1).png" alt="Logo do GitHub"></a>
-                <a href="https://wa.me/5522992583524?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."><img src="/img/whatsapp (1).png" alt="Logo do WhatsApp"></a>
+                <a href="#"><img src="/img/facebook (3).png" alt="Logo do Facebook" target="_blank"></a>
+                <a href="#"><img src="/img/instagram (3).png" alt="Logo do Instagram" target="_blank"></a>
+                <a href="#"><img src="/img/linkedin (1).png" alt="Logo do LinkedIn" target="_blank"></a>
+                <a href="#"><img src="/img/github (1).png" alt="Logo do GitHub" target="_blank"></a>
+                <a href="https://wa.me/5522992583524?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank"><img src="/img/whatsapp (1).png" alt="Logo do WhatsApp"></a>
             </div>
+
+            <!--Serviços-->                     <!--Seção em manutenção--> 
             <div class="services">
                 <h3 class="h3">Meus Serviços</h3>
                 <ul class="list-unstyled">
@@ -223,8 +263,13 @@
 </footer>
 
 <div class="end">
-    <p>Site criado por <a href="#">Douglas da silva nascimento</a></p>
+<p>Site criado por <a href="#">Douglas da silva nascimento</a></p>
 </div>
+
+
+
+
+
 
 
 

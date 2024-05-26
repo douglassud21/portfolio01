@@ -28,7 +28,6 @@ Azul Estelar: #00c3ff
 
 
 
-
 /**Configurações Globais**/
 
 body {
@@ -60,6 +59,15 @@ header {
 .logo a {
     color: #fff;
     text-decoration: none;
+}
+
+.logo a span {
+    font-weight: bold;
+    background: linear-gradient(45deg, #49FF00, #eaeaea, #00c3ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
 }
 
 nav {
@@ -574,7 +582,7 @@ main {
     }
     
     .project {
-        height: auto; /* Ajuste a altura para auto para manter o tamanho da caixa bom */
+        height: auto;
     }
     
     .project img {
@@ -585,7 +593,6 @@ main {
         padding: 2vh 3vw;
     }
 
-    /* Ajustando a quantidade de itens do carrossel para 2 */
     .carousel {
         width: 90vw;
     }
@@ -596,7 +603,42 @@ main {
 
     .slick-slide {
         margin: 1vh;
-        width: 45%; /* 45% para mostrar apenas dois itens por vez com algum espaço entre eles */
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #filters button {
+        padding: 1vh 2vw;
+    }
+    
+    .carousel {
+        width: 70vw;
+    }
+    
+    .project {
+        height: auto;
+    }
+    
+    .project img {
+        height: 10vh;
+    }
+    
+    .project button {
+        padding: 1vh 2vw;
+    }
+
+    .carousel {
+        width: 80vw;
+    }
+
+    .carousel.active {
+        display: block;
+    }
+
+    .slick-slide {
+        margin: 0.5vh;
+        width: 40%;
     }
 }
 
