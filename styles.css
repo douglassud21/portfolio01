@@ -1,5 +1,35 @@
 
+/**Tema:
+
+Espacial.
+
+**/
+
+
+/** Cores: 
+
+Preto: #0c0c0c
+Preto: #121212
+
+Verde Espacial: #0D630D
+Verde Nebuloso: #49FF00
+
+Azul Galáctico: #0B3D91
+Azul Estelar: #00c3ff
+
+**/
+
 /**Bem Vindo ao meu Site**/
+
+
+
+
+
+
+
+
+
+/**Configurações Globais**/
 
 body {
     font-family: Arial, sans-serif;
@@ -8,11 +38,10 @@ body {
     background-color: #0c0c0c;
 }
 
-
-/**Cabeçalho**/
+/**Menu**/
 
 header {
-    background-color: #292929;
+    background-color: #121212;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -58,7 +87,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0397fa80;
+    background-color: #00c3ff;
     border-radius: 8px;
 }
 
@@ -90,7 +119,6 @@ nav ul li a:hover {
     }
 }
 
-
 /**seção principal do site**/
 
 .sec_Primary {
@@ -111,7 +139,7 @@ h1 {
     font-size: 3em;
     font-weight: 500;
     margin: 0;
-    color: #ffffff;
+    color: #fff;
     overflow: hidden;
 }
 
@@ -124,7 +152,7 @@ h1 {
 .job-title span {
     font-size: 24px;
     font-weight: bold;
-    background: linear-gradient(45deg, #a8f729, #eaeaea, #0072ff);
+    background: linear-gradient(45deg, #49FF00, #eaeaea, #00c3ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -144,14 +172,14 @@ h1 {
     text-align-last: center;
     margin-bottom: 20px;
     font-size: 1.2em;
-    color: #ffffff;
+    color: #fff;
     line-height: 1.3;
 }
 
 .container p span{
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(45deg, #f53302, #eaeaea, #23bbf7);
+    background: linear-gradient(45deg, #00c3ff, #eaeaea, #49FF00);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -166,7 +194,7 @@ h1 {
     text-decoration: none;
     border-radius: 25px; /* ajuste o raio conforme necessário */
     transition: transform 0.3s ease;
-    background-image: linear-gradient(to right, #007bff, #0056b3); /* degradê de azul para azul mais escuro */
+    background-image: linear-gradient(to right, #00c3ff, #0B3D91); /* degradê de azul para azul mais escuro */
     border: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     position: relative;
@@ -180,7 +208,7 @@ h1 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(28, 113, 211, 0.336), rgba(88, 167, 241, 0.384)); /* degradê transparente */
+    background-image: linear-gradient(to right, rgba(5, 118, 247, 0.411), rgba(0, 255, 242, 0.493)); /* degradê transparente */
     transition: left 0.3s ease; /* animação da posição */
 }
 
@@ -229,359 +257,7 @@ h1 {
     }
 }
 
-
-/**conteúdo sobre mim**/
-
-main {
-    background-color: #0c0c0c; /* Cor de fundo suave */
-    color: #333; /* Cor do texto principal */
-    line-height: 1.6;
-    padding: 20px;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 800px; /* Defina uma largura máxima para evitar que o conteúdo se estenda indefinidamente */
-}
-
-.box_main h2 {
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(45deg, #9ffa0d, #eaeaea, #0011ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: moveGradient 3s ease infinite;
-}
-
-.box_main p {
-    margin-bottom: 20px;
-    color: white;
-}
-
-#sobre-mim {
-    border-bottom: 1px solid #ddd; /* Linha divisória entre seções */
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-}
-
-.box_main ul {
-    list-style-type: none; /* Remover marcadores de lista */
-    padding-left: 20px;
-}
-
-.box_main li {
-    margin-bottom: 10px;
-    color: white;
-}
-
-#meu-foco {
-    border-top: 1px solid #ddd; /* Linha divisória acima do foco */
-    padding-top: 20px;
-    margin-top: 40px;
-}
-
-.images-container img {
-    display: inline-block;
-    margin-right: 90px; /* Adicione margem direita para espaçamento entre as imagens */
-    margin-left: 100px;
-    margin-top: 30px;
-    max-width: 60px;
-    transition: 0.8s;
-}
-
-.images-container img:hover {
-    scale: 1.3;
-}
-
-@media only screen and (max-width: 600px) {
-
-
-    .box_main h2 {
-        font-size: 20px;
-    }
-
-    .images-container img {
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-#portfolio {
-    background-color: #0c0c0c;
-    height: 100vh;
-}
-
-#filters {
-    background-color: #0c0c0c;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
-
-#filters button {
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 30px;
-    margin: 15px;
-    margin-top: 100px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#filters button:hover {
-    color: #e9e8e8;
-    background-color: #014d9e;
-    scale: 1.1;
-}
-
-#carousels {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.carousel {
-    width: 90%;
-    display: none;
-    border: 3px solid #cccccc00;
-    border-radius: 15px;
-    background-color: #121212;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.carousel.active {
-    display: block;
-}
-
-.project {
-    text-align: center;
-    margin-bottom: 20px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
-}
-
-.project img {
-    max-width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.project img:hover {
-    box-shadow: 0 0 10px rgba(214, 213, 213, 0.644);
-}
-
-.project button {
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: auto;
-    transition: 0.5s;
-}
-
-.project button:hover {
-    color: #d1d0d0;
-    background-color: #014d9e;
-    scale: 1.1;
-}
-
-.project h3 {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.slick-slide {
-    margin: 10px;
-}
-
-.slick-prev, .slick-next {
-    color: black;
-}
-
-/* Adicionando classe para ajustar os botões */
-.slick-prev, .slick-next {
-    align-self: flex-end;
-    margin-top: auto;
-    margin-bottom: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    #filters button {
-        padding: 2vh 3vw;
-    }
-    
-    .carousel {
-        width: 80vw;
-    }
-    
-    .project img {
-        height: 12vh;
-    }
-    
-    .project button {
-        padding: 2vh 3vw;
-    }
-
-    /* Ajustando a quantidade de itens do carrossel para 2 */
-    .carousel {
-        width: 90vw;
-    }
-
-    .carousel.active {
-        display: block;
-    }
-
-    .slick-slide {
-        margin: 1vh;
-        width: 45%; /* 50% para mostrar apenas dois itens por vez com algum espaço entre eles */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**Contatos**/
-
-
-#contato {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #121212;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(121, 121, 121, 0.5);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-#contato:hover {
-    transform: scale(1.05);
-}
-
-#contato h1 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    font-weight: 900;
-    background: linear-gradient(45deg, #1b17fd, #3cf4fa, #0072ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: moveGradient 3s ease infinite;
-}
-
-#contato ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#contato li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-#contato li img {
-    width: 64px;
-    height: 64px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(209, 207, 207, 0.5);
-    transition: transform 0.8s ease;
-}
-
-#contato li img:hover {
-    transform: rotate(360deg);
-    scale: 1.1;
-}
-
-#contato li strong {
-    font-weight: bold;
-    font-size: 18px;
-    color: #e2e2e2;
-    min-width: 120px;
-}
-
-#contato li a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#contato li a:hover {
-    color: #014d9e;
-}
-
-#contatos-container {
-    position: relative;
-    overflow: hidden; /* Adicionamos overflow: hidden aqui */
-}
-
-.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: twinkle linear infinite;
-}
-
-@keyframes twinkle {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-@media screen and (max-width: 600px) {
-    #contato {
-        margin: 20px auto;
-        padding: 10px;
-    }
-    #contato h1 {
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-    #contato li {
-        flex-direction: column;
-        text-align: center;
-    }
-    #contato li img {
-        margin: 0 0 10px 0;
-    }
-}
-
-
-/**Estilo do rodapé**/
+/**Estilo de transição**/
 
 canvas {
     width: 100%;
@@ -597,7 +273,7 @@ canvas {
 .imagem-fundo {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.308), rgba(0, 0, 255, 0.452));
+    background-image: linear-gradient(to right, rgba(0, 102, 255, 0.541), rgba(0, 60, 255, 0.534));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -655,12 +331,13 @@ canvas {
     }
 
     .texto-principal {
+        display: none;
         font-size: 24px;
         top: 35%;
     }
 
     .subtexto {
-        font-size: 16px;
+        font-size: 30px;
         top: 45%;
     }
 
@@ -677,13 +354,14 @@ canvas {
     }
 
     .texto-principal {
-        font-size: 20px;
+        display: none;
+        font-size: 30px;
         top: 40%;
     }
 
     .subtexto {
         font-size: 14px;
-        top: 60%;
+        top: 40%;
     }
 
     .imagem-pequena {
@@ -693,6 +371,364 @@ canvas {
     }
 }
 
+/**conteúdo sobre mim**/
 
+main {
+    background-color: #0c0c0c;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.box_main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #49FF00, #eaeaea, #00c3ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+.box_main p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#sobre-mim {
+    border-bottom: 1px solid #fff; /* Linha divisória entre seções */
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.box_main ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    padding-left: 20px;
+}
+
+.box_main li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#meu-foco {
+    border-top: 1px solid #fff; /* Linha divisória acima do foco */
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.images-container img {
+    display: inline-block;
+    margin-right: 90px; /* Adicione margem direita para espaçamento entre as imagens */
+    margin-left: 100px;
+    margin-top: 30px;
+    max-width: 60px;
+    transition: 0.8s;
+}
+
+.images-container img:hover {
+    scale: 1.3;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .box_main h2 {
+        font-size: 20px;
+    }
+
+    .images-container img {
+        display: none;
+    }
+}
+
+/**Portifólio**/
+
+.pt {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #49FF00, #00c3ff, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+#portfolio {
+    background-color: #0c0c0c;
+    height: 100vh;
+}
+
+#filters {
+    background-color: #0c0c0c;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+#filters button {
+    color: #fff;
+    font-weight: 900;
+    background-color: #03a2d3;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 15px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#filters button:hover {
+    color: #121212;
+    background-color: #00c3ff;
+    scale: 1.1;
+}
+
+#carousels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    width: 90%;
+    display: none;
+    border: 3px solid #cccccc00;
+    border-radius: 15px;
+    background-color: #121212;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel.active {
+    display: block;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.project img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.project img:hover {
+    box-shadow: 0 0 4px rgba(214, 213, 213, 0.644);
+}
+
+.project button {
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #03a2d3;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: 0.5s;
+}
+
+.project button:hover {
+    color: #121212;
+    background-color: #00c3ff;
+    scale: 1.1;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-prev, .slick-next {
+    color: black;
+}
+
+.slick-prev, .slick-next {
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #filters button {
+        padding: 2vh 3vw;
+    }
+    
+    .carousel {
+        width: 80vw;
+    }
+    
+    .project {
+        height: auto; /* Ajuste a altura para auto para manter o tamanho da caixa bom */
+    }
+    
+    .project img {
+        height: 12vh;
+    }
+    
+    .project button {
+        padding: 2vh 3vw;
+    }
+
+    /* Ajustando a quantidade de itens do carrossel para 2 */
+    .carousel {
+        width: 90vw;
+    }
+
+    .carousel.active {
+        display: block;
+    }
+
+    .slick-slide {
+        margin: 1vh;
+        width: 45%; /* 45% para mostrar apenas dois itens por vez com algum espaço entre eles */
+    }
+}
+
+/**Contatos**/
+
+footer {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 150px 0;
+}
+
+footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+
+footer .contact-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #00c3ff;
+    
+}
+
+footer .contact-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+footer .contact-logos a img {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+}
+
+footer .contact-logos a img:hover {
+    scale: 1.4;
+}
+
+.contact-title, .h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #49FF00, #00c3ff, #49FF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+.end {
+    color: #fff;
+    background-color: #121212;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.end p {
+    padding: 15px;
+}
+
+.end p a {
+    text-decoration: none;
+    color: #49FF00;
+}
+
+.end p a:hover {
+    color: #0D630D;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 75px 0;
+    }
+
+    footer .container {
+        max-width: 100%;
+        padding: 25px 50px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    footer .contact-logos {
+        flex-direction: row; /* Alterado de 'column' para 'row' */
+        flex-wrap: wrap; /* Adicionado para permitir que os itens se ajustem à linha seguinte se necessário */
+        justify-content: center; /* Adicionado para centralizar os itens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    footer .contact-logos a img {
+        margin: 10px;
+    }
+
+    footer ul li {
+        margin-bottom: 30px;
+    }
+
+    hr {
+        display: none;
+    }
+}
 
 /**Obrigado pela visita!!!**/
