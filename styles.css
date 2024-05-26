@@ -309,14 +309,144 @@ main {
 
 
 
-
-
-
-
-.port {
-    background-color: #121212;
+#portfolio {
+    background-color: #0c0c0c;
+    height: 100vh;
 }
 
+#filters {
+    background-color: #0c0c0c;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#filters button {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 15px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#filters button:hover {
+    color: #e9e8e8;
+    background-color: #014d9e;
+    scale: 1.1;
+}
+
+#carousels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    width: 90%;
+    display: none;
+    border: 3px solid #cccccc00;
+    border-radius: 15px;
+    background-color: #121212;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel.active {
+    display: block;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.project img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.project img:hover {
+    box-shadow: 0 0 10px rgba(214, 213, 213, 0.644);
+}
+
+.project button {
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: 0.5s;
+}
+
+.project button:hover {
+    color: #d1d0d0;
+    background-color: #014d9e;
+    scale: 1.1;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-prev, .slick-next {
+    color: black;
+}
+
+/* Adicionando classe para ajustar os botões */
+.slick-prev, .slick-next {
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #filters button {
+        padding: 2vh 3vw;
+    }
+    
+    .carousel {
+        width: 80vw;
+    }
+    
+    .project img {
+        height: 12vh;
+    }
+    
+    .project button {
+        padding: 2vh 3vw;
+    }
+
+    /* Ajustando a quantidade de itens do carrossel para 2 */
+    .carousel {
+        width: 90vw;
+    }
+
+    .carousel.active {
+        display: block;
+    }
+
+    .slick-slide {
+        margin: 1vh;
+        width: 45%; /* 50% para mostrar apenas dois itens por vez com algum espaço entre eles */
+    }
+}
 
 
 

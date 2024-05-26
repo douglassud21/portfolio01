@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     
-    <header>
+<header>
         <div class="logo">
             <a href="#">Logo</a>
         </div>
@@ -21,14 +23,13 @@
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
-                <li><a href="#">Portfólio</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>
-
-    
-    <section class="sec_Primary" id="inicio">
+</header>
+   
+<section class="sec_Primary" id="inicio">
         <div class="container">
             <p>Ola! Me chamo</p>
             <h1 class="highlight">
@@ -50,10 +51,9 @@
 
         </div>
 
-    </section>
-
+</section>
     
-    <main>
+<main>
 
             <section class="box_main"  id="sobre-mim">
                 <h2>Sobre Mim</h2>
@@ -83,18 +83,104 @@
                 <p>Como desenvolvedor front-end, meu principal objetivo é criar experiências que não apenas impressionem visualmente, mas também sejam acessíveis e intuitivas para todos os usuários. Estou constantemente aprendendo e acompanhando as últimas tendências e melhores práticas da indústria para garantir que minhas habilidades estejam sempre atualizadas.</p>
             </section>
     
-    </main>
+</main>
 
-    
+<div id="portfolio">
+    <div id="filters">
+        <button onclick="filter('web')">Web</button>
+        <button onclick="filter('games')">Apps | Games</button>
+        <button onclick="filter('design')">Design</button>
+    </div>
+    <div id="carousels">
+        <div id="web" class="carousel active">
+            <div class="project">
+                <h3>Projeto Web 1</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Web 1">
+                <button onclick="window.open('https://www.seuprojeto1.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto Web 2</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Web 2">
+                <button onclick="window.open('https://www.seuprojeto2.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto Web 3</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Web 3">
+                <button onclick="window.open('https://www.seuprojeto3.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto Web 4</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Web 4">
+                <button onclick="window.open('https://www.seuprojeto4.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto Web 5</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Web 5">
+                <button onclick="window.open('https://www.seuprojeto5.com', '_blank')">Visitar Site</button>
+            </div>
+        </div>
 
-    <section class="port">
-        ola mundo!
-    </section>
 
 
+<div id="games" class="carousel">
+            <div class="project">
+                <h3>Previsão do Tempo</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 1">
+                <button onclick="window.open('//douglassud21.github.io/Previsao-do-tempo/', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Relógio Digital</h3>
+                <img src="/img/relogio.png" alt="Imagem do Projeto Mobile 2">
+                <button onclick="window.open('//douglassud21.github.io/Relogio-Digital/')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Tela de Login</h3>
+                <img src="/img/tela de login.png" alt="Imagem do Projeto Mobile 3">
+                <button onclick="window.open('//douglassud21.github.io/tela-de-login/')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>App | Game 4</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 4">
+                <button onclick="window.open('https://www.seuprojeto9.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>App | Game 5</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto Mobile 5">
+                <button onclick="window.open('https://www.seuprojeto10.com', '_blank')">Visitar Site</button>
+            </div>
+  </div>
 
+<div id="design" class="carousel">
+            <div class="project">
+                <h3>Projeto de Design 1</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 1">
+                <button onclick="window.open('https://www.seuprojeto11.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto de Design 2</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 2">
+                <button onclick="window.open('https://www.seuprojeto12.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto de Design 3</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 3">
+                <button onclick="window.open('https://www.seuprojeto13.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto de Design 4</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 4">
+                <button onclick="window.open('https://www.seuprojeto14.com', '_blank')">Visitar Site</button>
+            </div>
+            <div class="project">
+                <h3>Projeto de Design 5</h3>
+                <img src="/img/previsão.png" alt="Imagem do Projeto de Design 5">
+                <button onclick="window.open('https://www.seuprojeto15.com', '_blank')">Visitar Site</button>
+            </div>
+</div>
+</div>
+</div>
 
-    <aside id="contatos-container" class="contatos_01">
+<aside id="contatos-container" class="contatos_01">
             <div id="contato">
                 <h1>Meus Contatos</h1>
                 <ul>
@@ -117,51 +203,21 @@
                 </ul>
             </div>
             <div class="stars"></div>
-    </aside>
+</aside>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="capa">
-    <canvas id="canvas"></canvas>
-    <div class="imagem-fundo"></div>
-        <div class="texto-principal">
-            Obrigado pela visita!
-        </div>
-        <div class="subtexto">
-            Descubra mais sobre mim <a href="https://www.linkedin.com/in/douglas-da-silva-nascimento-3146122ab/" target="_blank">aqui!</a>
-        </div>
-    <img src="/img/alien-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
-</div>
+<footer>
+    <div class="capa">
+        <canvas id="canvas"></canvas>
+        <div class="imagem-fundo"></div>
+            <div class="texto-principal">
+                Obrigado pela visita!
+            </div>
+            <div class="subtexto">
+                Descubra mais sobre mim <a href="https://www.linkedin.com/in/douglas-da-silva-nascimento-3146122ab/" target="_blank">aqui!</a>
+            </div>
+        <img src="/img/alien-removebg-preview.png" alt="Descrição da Imagem" class="imagem-pequena" id="imagemMovivel">
+    </div>
+</footer>
 
 
 <script>
@@ -256,7 +312,7 @@
   
     createStars();
     animate();
-  </script>
+</script>
 
 <script>
     
@@ -320,11 +376,6 @@ animarEscala();
 
 </script>
 
-
-
-
-
-
 <script>
     function createStars() {
         const stars = document.querySelector('.stars');
@@ -343,6 +394,44 @@ animarEscala();
     createStars();
 </script>
 
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    function filter(category) {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        if (carousel.id === category) {
+            carousel.classList.add('active');
+        } else {
+            carousel.classList.remove('active');
+        }
+    });
+    $('.carousel.active').slick('setPosition'); // Atualiza o layout do carrossel ativo
+}
+
+$(document).ready(function(){
+    $('.carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+});
+
+// Inicializa o primeiro carrossel visível
+$('#web').slick('setPosition');
+;
+</script>
 
 </body>
 </html>
