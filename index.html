@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>GalaxyPortfólio</title>
+
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -30,7 +33,7 @@
         <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre-mim">Sobre Mim</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#pt-01">Portfólio</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
@@ -132,7 +135,7 @@
 <hr>
 
 <!--portfolio-->
-<h1 class="pt">Meu Portifólio</h1>
+<h1 class="pt" id="pt-01">Meu Portifólio</h1>
 <div id="portfolio">
     
 <!--portfolio-->
@@ -248,14 +251,15 @@
                 <a href="https://wa.me/5522992583524?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank"><img src="/img/whatsapp (1).png" alt="Logo do WhatsApp"></a>
             </div>
 
-            <!--Serviços-->                     <!--Seção em manutenção--> 
+            <!--Página em manutenção para o futuro-->
+            <!--Serviços                   
             <div class="services">
                 <h3 class="h3">Meus Serviços</h3>
                 <ul class="list-unstyled">
                     <li><a href="#">Criação de Landing Pages</a></li>
                     <li><a href="#">Criação de Design para Sites</a></li>
                 </ul>
-            </div>
+            </div>-->  
         </div>
     </div>
 </footer>
@@ -265,193 +269,7 @@
 </div>
 
 
-
-
-
-
-
-
-<script>
-    function toggleMenu() {
-        var navUl = document.querySelector('nav ul');
-        navUl.classList.toggle('active');
-    }
-</script>
-
-<script>
-    function animateName() {
-        const spans = document.querySelectorAll('.highlight span');
-        let delay = 0;
-
-        spans.forEach((span, index) => {
-            delay += 0.5;
-            setTimeout(() => {
-                span.style.opacity = 1;
-                span.style.transform = 'translateY(0)';
-            }, delay * 1000);
-        });
-
-        // Adicionando um tempo de espera extra reduzido após a última letra ser animada
-        setTimeout(() => {
-            spans.forEach(span => {
-                span.style.opacity = 0;
-                span.style.transform = 'translateY(100%)';
-            });
-            setTimeout(animateName, delay * 100 + 100);
-        }, delay * 1000);
-    }
-
-    animateName(); // Inicia a animação pela primeira vez
-</script>
-
-<script>
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
-  
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  
-    const stars = [];
-    const numStars = 1000;
-  
-    function Star(x, y, radius, color, speed) {
-      this.x = x;
-      this.y = y;
-      this.radius = radius;
-      this.color = color;
-      this.speed = speed;
-  
-      this.draw = function() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-      }
-  
-      this.update = function() {
-        this.x -= this.speed;
-  
-        if (this.x < -this.radius) {
-          this.x = canvas.width + this.radius;
-          this.y = Math.random() * canvas.height;
-        }
-  
-        this.draw();
-      }
-    }
-  
-    function createStars() {
-      for (let i = 0; i < numStars; i++) {
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height;
-        const radius = Math.random() * 2;
-        const color = 'white';
-        const speed = Math.random() * 2 + 0.5;
-        stars.push(new Star(x, y, radius, color, speed));
-      }
-    }
-  
-    function animate() {
-      requestAnimationFrame(animate);
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-  
-      stars.forEach(star => {
-        star.update();
-      });
-    }
-  
-    createStars();
-    animate();
-</script>
-
-<script>
-    
-var imagemMovivel = document.getElementById("imagemMovivel");
-
-var posicao = 0;
-
-function animarImagem() {
-   
-    posicao -= 1;
-    imagemMovivel.style.right = posicao + 'px';
-
-    if (posicao <= -50) { 
-        posicao = window.innerWidth; 
-    }
-
-    requestAnimationFrame(animarImagem);
-}
-
-    animarImagem();
-</script>
-
-<script>
-
-// Captura a referência da imagem movível
-var imagemMovivel = document.getElementById("imagemMovivel");
-
-// Define a escala inicial
-var escala = 0.5;
-// Define o destino inicial da escala
-var destinoEscala = 2.5;
-// Define a velocidade da animação
-var velocidade = 0.005;
-// Define se a escala está aumentando ou diminuindo
-var aumentando = true;
-
-// Define a função para animar a escala
-function animarEscala() {
-    // Atualiza a escala de acordo com a direção
-    if (aumentando) {
-        escala += velocidade;
-        if (escala >= destinoEscala) {
-            aumentando = false;
-        }
-    } else {
-        escala -= velocidade;
-        if (escala <= 0.5) {
-            aumentando = true;
-        }
-    }
-    
-    // Aplica a escala apenas na imagem
-    imagemMovivel.style.transform = 'scale(' + escala + ')';
-
-    // Solicita que a função seja chamada novamente na próxima animação do navegador
-    requestAnimationFrame(animarEscala);
-}
-
-// Inicia a animação da escala
-animarEscala();
-
-</script>
-
-<script>
-    function createStars() {
-        const stars = document.querySelector('.stars');
-        const numStars = 200; // Change the number of stars here
-
-        for (let i = 0; i < numStars; i++) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            star.style.left = Math.random() * 100 + 'vw';
-            star.style.top = Math.random() * 100 + 'vh';
-            star.style.animationDuration = (Math.random() * 2 + 1) + 's'; // Vary animation duration
-            stars.appendChild(star);
-        }
-    }
-
-    createStars();
-</script>
-
-
-
-
-
-
-
-
+<!--Carrossel-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
