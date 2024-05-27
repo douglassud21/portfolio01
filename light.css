@@ -1,0 +1,271 @@
+
+/**cores
+
+#FF8811 laranja
+#f3031f vermelho claro
+#E71D36 vermelho
+#f1f1f1 branco
+#0B0014 preto
+#536271 cinza
+
+**/
+
+
+.trilho {
+    width: 60px;
+    height: 30px;
+    background-color: #0B0014;
+    border: 1px solid #0B0014 ;
+    border-radius: 150px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('/img/lua-crescente.png');
+    background-size: cover;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    transition: .5s;
+}
+
+.ligth.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('/img/sol.png');
+    background-size: cover;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    transition: .5s;
+}
+
+.trilho.ligth {
+    background-color: #0B0014;
+}
+
+.trilho.ligth .indicador {
+    left: 40px;
+    background-color: #f5e9e200;
+}
+
+body.ligth {
+    background-color: #f1f1f1;
+}
+
+body.ligth header {
+    background-color: #0B0014;
+}
+
+body.ligth .logo a {
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+body.ligth .logo a span {
+    background: linear-gradient(45deg, #FF8811, #F5E9E2, #E71D36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth nav ul li a {
+    font-weight: 600;
+    color: #f1f1f1;
+    transition: background-color 0.3s;
+}
+
+body.ligth nav ul li a:hover {
+    background-color: #FF8811;
+    color: #eaeaea;
+}
+
+body.ligth .sec_Primary {
+    background: #f1f1f1;
+}
+
+body.ligth .container {
+    background: #f1f1f1;
+}
+
+body.ligth h1 {
+    color: #0B0014;
+}
+
+body.ligth .job-title {
+    color: #0B0014;
+}
+
+body.ligth .job-title span {
+    background: linear-gradient(45deg, #f3031f, #E71D36, #FF8811);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth .container p {
+    color: #0B0014;
+}
+
+body.ligth .container p span{
+    background: linear-gradient(45deg, #FF8811, #E71D36, #f3031f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth .btn {
+    font-weight: 600;
+    color: #0B0014;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, #FF8811, #f3031f);
+}
+
+body.ligth .btn::after {
+    background-image: linear-gradient(to right, rgba(238, 2, 41, 0.411), rgba(156, 0, 26, 0.603));
+    transition: left 0.3s ease;
+}
+
+body.ligth .imagem-fundo {
+    background-image: linear-gradient(to right, rgba(0, 183, 255, 0.541), rgba(46, 255, 238, 0.534));
+}
+
+body.ligth .texto-principal {
+    color: #f1f1f1;
+}
+
+body.ligth .subtexto {
+    color: #f1f1f1;
+}
+
+body.ligth .subtexto a {
+    color: #f1f1f1;
+}
+
+body.ligth .subtexto a:hover {
+    color: rgb(43, 175, 252);
+}
+
+body.ligth main {
+    background-color: #f1f1f1;
+}
+
+body.ligth .box_main h2 {
+    background: linear-gradient(45deg, #f3031f, #FF8811, #E71D36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth .box_main p {
+    color: #0B0014;
+}
+
+body.ligth #sobre-mim {
+    border-bottom: 1px solid #0B0014;
+}
+
+body.ligth .box_main li {
+    color: #0B0014;
+}
+
+body.ligth #meu-foco {
+    border-top: 1px solid #0B0014;
+}
+
+body.ligth .pt {
+    background: linear-gradient(45deg, #E71D36, #FF8811, #f3031f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth #portfolio {
+    background-color: #f1f1f1;
+}
+
+body.ligth #filters {
+    background-color: #f1f1f1;
+}
+
+body.ligth #filters button {
+    color: #f1f1f1;
+    background-color: #FF8811;
+}
+
+body.ligth #filters button:hover {
+    color: #f1f1f1;
+    background-color: #f3031f;
+}
+
+body.ligth .carousel {
+    background-color: #0B0014;
+}
+
+body.ligth .project button {
+    color: #f1f1f1;
+    background-color: #FF8811;
+}
+
+body.ligth .project button:hover {
+    color: #f1f1f1;
+    background-color: #f3031f;
+}
+
+body.ligth .project h3 {
+    color: #f1f1f1;
+}
+
+body.ligth .slick-prev, .slick-next {
+    color: black;
+}
+
+body.ligth footer {
+    background-color: #f1f1f1;
+    color: #0B0014;
+}
+
+body.ligth footer .container {
+    background-color: #0B0014;
+}
+
+body.ligth footer ul li a {
+    color: #0B0014;
+}
+
+body.ligth footer ul li a:hover {
+    color: #0B0014;
+}
+
+body.ligth .contact-title, .h3 {
+    background: linear-gradient(45deg, #FF8811, #FF8811, #E71D36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: moveGradient 3s ease infinite;
+}
+
+body.ligth .end {
+    color: #f1f1f4;
+    background-color: #0B0014;
+}
+
+body.ligth .end p a {
+    color: #FF8811;
+}
+
+body.ligth .end p a:hover {
+    color: #E71D36;
+}

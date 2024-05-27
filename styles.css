@@ -35,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0c0c0c;
-    transition: background-color 0.5s; /* Transição suave */
+    transition: .5s;
 }
 
 /**Menu**/
@@ -51,6 +51,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 999; /* Garante que o header esteja acima de outros elementos */
+    transition: .5s;
 }
 
 .logo {
@@ -58,8 +59,10 @@ header {
 }
 
 .logo a {
+    font-weight: 700;
     color: #fff;
     text-decoration: none;
+    transition: .5s;
 }
 
 .logo a span {
@@ -69,6 +72,7 @@ header {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 nav {
@@ -89,6 +93,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-weight: 600;
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
@@ -98,6 +103,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #00c3ff;
     border-radius: 8px;
+    transition: .5s;
 }
 
 @media (max-width: 768px) {
@@ -136,12 +142,14 @@ nav ul li a:hover {
     align-items: center;
     height: 100vh;
     background: #121212;
+    transition: .5s;
 }
 
 .container {
     text-align: center;
     background: #121212;
     padding: 40px;
+    transition: .5s;
 }
 
 h1 {
@@ -150,12 +158,14 @@ h1 {
     margin: 0;
     color: #fff;
     overflow: hidden;
+    transition: .5s;
 }
 
 .job-title {
     font-size: 1.5em;
     color: #ffffff;
     margin: 20px 0;
+    transition: .5s;
 }
 
 .job-title span {
@@ -166,6 +176,7 @@ h1 {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 .highlight span {
@@ -183,6 +194,7 @@ h1 {
     font-size: 1.2em;
     color: #fff;
     line-height: 1.3;
+    transition: .5s;
 }
 
 .container p span{
@@ -193,9 +205,11 @@ h1 {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 .btn {
+    font-weight: 600;
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -208,6 +222,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     position: relative;
     overflow: hidden;
+    transition: .5s;
 }
 
 .btn::after {
@@ -289,6 +304,7 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
+    transition: .5s;
 }
 
 .texto-principal {
@@ -301,6 +317,7 @@ canvas {
     font-weight: 800;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.5);
+    transition: .5s;
 }
 
 .subtexto {
@@ -311,6 +328,7 @@ canvas {
     color: #ffffff;
     font-size: 18px;
     text-align: center;
+    transition: .5s;
 }
 
 .subtexto a {
@@ -318,10 +336,12 @@ canvas {
     text-decoration: none;
     font-size: 22px;
     font-weight: 700;
+    transition: .5s;
 }
 
 .subtexto a:hover {
     color: rgb(137, 154, 248);
+    transition: .5s;
 }
 
 .imagem-pequena {
@@ -332,6 +352,7 @@ canvas {
     height: auto;
     z-index: 1;
     transition: transform 0.5s ease-in-out;
+
 }
 
 @media (max-width: 768px) {
@@ -388,6 +409,7 @@ main {
     padding: 20px;
     margin: 0 auto;
     max-width: 800px;
+    transition: .5s;
 }
 
 .box_main h2 {
@@ -398,17 +420,20 @@ main {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 .box_main p {
     margin-bottom: 20px;
     color: #fff;
+    transition: .5s;
 }
 
 #sobre-mim {
     border-bottom: 1px solid #fff; /* Linha divisória entre seções */
     padding-bottom: 20px;
     margin-bottom: 40px;
+    transition: .5s;
 }
 
 .box_main ul {
@@ -419,12 +444,14 @@ main {
 .box_main li {
     margin-bottom: 10px;
     color: #fff;
+    transition: .5s;
 }
 
 #meu-foco {
     border-top: 1px solid #fff; /* Linha divisória acima do foco */
     padding-top: 20px;
     margin-top: 40px;
+    transition: .5s;
 }
 
 .images-container img {
@@ -464,11 +491,13 @@ main {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 #portfolio {
     background-color: #0c0c0c;
     height: 100vh;
+    transition: .5s;
 }
 
 #filters {
@@ -476,6 +505,7 @@ main {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 40px;
+    transition: .5s;
 }
 
 #filters button {
@@ -495,6 +525,7 @@ main {
     color: #121212;
     background-color: #00c3ff;
     scale: 1.1;
+    transition: .5s;
 }
 
 #carousels {
@@ -511,6 +542,7 @@ main {
     background-color: #121212;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .5s;
 }
 
 .carousel.active {
@@ -552,11 +584,13 @@ main {
     color: #121212;
     background-color: #00c3ff;
     scale: 1.1;
+    transition: .5s;
 }
 
 .project h3 {
     margin-bottom: 10px;
     color: #fff;
+    transition: .5s;
 }
 
 .slick-slide {
@@ -565,6 +599,7 @@ main {
 
 .slick-prev, .slick-next {
     color: black;
+    transition: .5s;
 }
 
 .slick-prev, .slick-next {
@@ -650,9 +685,11 @@ footer {
     color: #fff;
     padding: 150px 0;
     margin-top: 0px;
+    transition: .5s;
 }
 
 footer .container {
+    border-radius: 15px;
     max-width: 960px;
     margin: 0 auto;
     padding: 50px 100px;
@@ -680,10 +717,12 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+    transition: .5s;
 }
 
 footer ul li a:hover {
     color: #00c3ff;
+    transition: .5s;
     
 }
 
@@ -714,6 +753,7 @@ footer .contact-logos a img:hover {
     background-clip: text;
     color: transparent;
     animation: moveGradient 3s ease infinite;
+    transition: .5s;
 }
 
 .end {
@@ -722,6 +762,7 @@ footer .contact-logos a img:hover {
     width: 100%;
     height: 50px;
     text-align: center;
+    transition: .5s;
 }
 
 .end p {
@@ -731,10 +772,12 @@ footer .contact-logos a img:hover {
 .end p a {
     text-decoration: none;
     color: #49FF00;
+    transition: .5s;
 }
 
 .end p a:hover {
     color: #0D630D;
+    transition: .5s;
 }
 
 @media only screen and (max-width: 600px) {
