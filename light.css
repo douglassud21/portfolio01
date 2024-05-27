@@ -27,7 +27,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url('/img/lua-crescente.png');
+    background-image: url('img/lua-crescente.png');
     background-size: cover;
     position: fixed;
     bottom: 10px;
@@ -39,7 +39,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url('/img/sol.png');
+    background-image: url('img/sol.png');
     background-size: cover;
     position: fixed;
     bottom: 10px;
